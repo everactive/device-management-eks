@@ -79,16 +79,16 @@ docs/tf: docs
 		$(MAKE) docs/tf -C $$path STACK_NAME=${STACK_NAME}; \
     done
 build/tools:
-	docker build -t everactive/devops-tools:latest .
+	docker build -t everactive/device-management-tools:latest .
 console/tools:
 	docker run  \
 			   -v $(PWD):/home/device-manager \
 			   -v ~/.aws:/root/.aws \
 			   -v ~/.kube:/root/.kube \
-			   -it --rm everactive/devops-tools:latest /bin/bash
+			   -it --rm everactive/device-management-tools:latest /bin/bash
 exec:
 	docker run  \
 			   -v $(PWD):/home/device-manager \
 			   -v ~/.aws:/root/.aws \
 			   -v ~/.kube:/root/.kube \
-			   -it --rm everactive/devops-tools:latest ${cmd}
+			   -it --rm everactive/device-management-tools:latest ${cmd}
