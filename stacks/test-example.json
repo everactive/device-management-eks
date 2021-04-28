@@ -1,0 +1,26 @@
+{
+    "resource_name": "my-resource-name",
+    "region": "us-east-1",
+    "state_bucket": "my-state-bucket",
+    "state_key": "device-management/path/to/terraform.tfstate",
+    "state_kms_alias": "alias/my-kms-key",
+    "namespace": "k8s-namespace",
+    "mqtt_domain": "my-mqtt",
+    "identity_domain": "my-identity",
+    "manager_domain": "my-mg",
+    "docker_tag": "latest",
+    "eks_cluster": "my-eks",
+    "hosted_zone": "MYROUTE53ZONEID",
+    "docker_namespace": "everactive",
+    "cert_arn": "arn:aws:acm:us-east-1:123456789:certificate/my-cert-arn",
+    "db_subnet_group_name": "my-rds-db-subnet-group-name",
+    "ip_whitelist_public": [
+        "0.0.0.0/0"],
+    "ip_whitelist_private": [
+        "0.0.0.0/0"],
+    "tags": {
+        "environment": "test",
+        "resource": "device-management",
+        "foo": "bar"
+      }
+}

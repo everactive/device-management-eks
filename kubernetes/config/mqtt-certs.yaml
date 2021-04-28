@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mqtt-certs
+data:
+  ca.crt: ${CRT_B64}
+  server.key: ${SRV_KEY_B64}
+  server.crt: ${SRV_CRT_B64}
