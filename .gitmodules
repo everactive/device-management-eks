@@ -1,9 +1,12 @@
 [submodule "iot-devicetwin"]
 	path = iot-devicetwin
 	url = https://github.com/everactive/iot-devicetwin.git
+	branch = main
 [submodule "iot-identity"]
 	path = iot-identity
 	url = https://github.com/everactive/iot-identity.git
+	branch = main
 [submodule "iot-management"]
 	path = iot-management
 	url = https://github.com/everactive/iot-management.git
+	branch = main
